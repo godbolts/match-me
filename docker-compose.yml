@@ -1,0 +1,26 @@
+
+services:
+  db:
+    image: postgis/postgis:15-3.3 # Specify the PostgreSQL version
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: MatchMeDev
+      POSTGRES_PASSWORD: SecretDevPassword
+      POSTGRES_DB: Match-Me-Data
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Persist data on the host
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  postgres_data:
+    # Volume to persist PostgreSQL data
+
+    # if postgres_data is empty or doesnt exist, it gets created and init.sql will be run, and the database server will start. 
+
+    # if postgres_data has any data, init.sql is NOT run, and the database server will start.
+
+    # make reset-db will close the database server and will also delete postgres_data = all the information saved in the db will be deleted
+
+    # on the next start after reset-db, init.sql is run because postgres_data doesn't exist

@@ -47,10 +47,10 @@ with all the matching scores calculated for each connection, adding a lot of dem
 ## Overview
 This API provides endpoints for user authentication, profile management, location tracking, matchmaking, chat services, and online status tracking. 
 
-**Base URL: http://localhost:4000/** 
+**Base URL:** `http://localhost:4000/`
 
-## Authentication
-This API uses Bearer token authorization where the /login and /authorization endpoints provide a temporary token upon entering the correct combination of username/email and password.
+### Authentication
+This API uses Bearer token authorization where the /login endpoint provides a temporary token upon entering the correct combination of username/email and password.
 
 ### Login to the App
 **Endpoint:** `POST /login`

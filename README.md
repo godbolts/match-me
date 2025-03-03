@@ -15,37 +15,37 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 
 **Request:**
 ```json
-[
+{
     "email": "example@example.com",
     "password": "Example1" 
-]
+}
 ```
 
 **Response:**
 ```json
-[
+{
 "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDExMTEwMjQsImlhdCI6MTc0MTAyNDYyNCwic3ViIjoiMjc4Yjk1NjYtYzBiYi00YWI5LWI4YjEtMGE3ZTQ3N2M5YzFkIn0.xFt0Pm_NUFULTPR3vMADNWEpRBc8AZRDnaSsn8DWtaw"
-]
+}
 ```
 
 ### Register on the App
 **Endpoint:** `POST /register`
 
-**Description:** Registers a user into the application. 
+**Description:** Registers a user into the application, allowing them later to request the authorization token.
 
 **Request:**
 ```json
-[
+{
     "email": "example@example.com",
     "password": "Example1"
-]
+}
 ```
 
 **Response:**
 ```json
-[
+{
   "message": "User successfully registered"
-]
+}
 ```
 
 ### Get All Connections
@@ -55,7 +55,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 
 **Response:**
 ```json
-[
+{
     "9a5721fc-3499-4b8f-85cb-0dce0480daf6",
     "6e5e70f1-7931-40bb-b54f-374f63c72512",
     "db863918-54f0-4496-8a7e-599252ffc9ff",
@@ -63,7 +63,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
     "ea115f4a-d64c-43fc-b09b-35e5649aea22",
     "369b46cb-20ef-44d9-965a-85ffab4ccd26",
     "4fe97a4d-ee06-4c25-a855-08a42c79b1cc"
-]
+}
 ```
 
 ### Get All Recommendations
@@ -73,13 +73,13 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 
 **Response:**
 ```json
-[
+{
     "ef12a23b-21e0-4f61-bfcc-5d4e39213cce",
     "ea85dc93-2fc8-4f7b-bffe-92c77ed6d7ec",
     ... ,
     "2c434578-9bd4-49bb-a264-d399d07b5c75",
     "c4c40123-d3f0-40cc-ac90-009f86109636"
-]
+}
 ```
 
 ### Get User Profile by ID
@@ -158,38 +158,81 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 **Response Example:**
 ```json
 {
-    "Communication": [
+    "Communication": {
         "voice chat "
-    ],
-    "Distance": [
+    },
+    "Distance": {
         "100-500 km"
-    ],
-    "Genre": [
+    },
+    "Genre": {
         "FPS",
         "Simulation"
-    ],
-    "Goals": [
+    },
+    "Goals": {
         "Ranking",
         "Socialize",
         "For laughs"
-    ],
-    "Language": [
+    },
+    "Language": {
         "Estonian"
-    ],
-    "Platform": [
+    },
+    "Platform": {
         "X-box"
-    ],
-    "Play Style": [
+    },
+    "Play Style": {
         "Enthusiast",
         "AFK"
-    ],
-    "Session": [
+    },
+    "Session": {
         "I can go all day, every day."
-    ],
-    "Vibe": [
+    },
+    "Vibe": {
         "Chill",
         "Laid-back"
-    ]
+    }
+}
+```
+
+### 
+**Endpoint:** `GET /online`
+
+**Description:** Returns a boolean, based on whether a user is currently online based on whether a bearer token is currently valid.
+
+**Response:**
+```json
+{
+    "is_online": true
+}
+```
+
+### 
+**Endpoint:** `GET /spawn/bots`
+
+**Description:** An endpoint, once called, creates 100 random users in the database to showcase the webapp's capabilities in single user use
+
+**Response:**
+```json
+{
+    "message":"Demo bots spawned and are on the loose!"
+}
+```
+
+### 
+**Endpoint:** `POST /username`
+
+**Description:** Allows to store and update the username of a user based on the id found in the Bearer Token.
+
+**Request:**
+```json
+{
+ "username":"ExampleUsername"
+}
+```
+
+**Response:**
+```json
+{
+    "message": "Username successfully registered"
 }
 ```
 
@@ -201,38 +244,38 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 **Response:**
 ```json
 {
-    "Communication": [
+    "Communication": {
         "voice chat "
-    ],
-    "Distance": [
+    },
+    "Distance": {
         "100-500 km"
-    ],
-    "Genre": [
+    },
+    "Genre": {
         "FPS",
         "Simulation"
-    ],
-    "Goals": [
+    },
+    "Goals": {
         "Ranking",
         "Socialize",
         "For laughs"
-    ],
-    "Language": [
+    },
+    "Language": {
         "Estonian"
-    ],
-    "Platform": [
+    },
+    "Platform": {
         "X-box"
-    ],
-    "Play Style": [
+    },
+    "Play Style": {
         "Enthusiast",
         "AFK"
-    ],
-    "Session": [
+    },
+    "Session": {
         "I can go all day, every day."
-    ],
-    "Vibe": [
+    },
+    "Vibe": {
         "Chill",
         "Laid-back"
-    ]
+    }
 }
 ```
 

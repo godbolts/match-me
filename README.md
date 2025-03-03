@@ -28,6 +28,9 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 }
 ```
 
+**Chart:**
+![image](draw/login.png)
+
 ### Register on the App
 **Endpoint:** `POST /register`
 
@@ -47,6 +50,8 @@ This API uses Bearer token authorization where the /login endpoint provides a te
   "message": "User successfully registered"
 }
 ```
+**Chart:**
+![image](draw/register.png)
 
 ### Get All Connections
 **Endpoint:** `GET /connections`
@@ -66,6 +71,10 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 }
 ```
 
+**Chart:**
+![image](draw/connections.png)
+
+
 ### Get All Recommendations
 **Endpoint:** `GET /recommendations`
 
@@ -81,6 +90,9 @@ This API uses Bearer token authorization where the /login endpoint provides a te
     "c4c40123-d3f0-40cc-ac90-009f86109636"
 }
 ```
+
+**Chart:**
+![image](draw/recommendations.png)
 
 ### Get User Profile by ID
 **Endpoint:** `GET /users/{id}/profile`
@@ -99,6 +111,8 @@ This API uses Bearer token authorization where the /login endpoint provides a te
     "birthdate": "1999-01-01T00:00:00Z"
 }
 ```
+**Chart:**
+![image](draw/user_profile.png)
 
 ### Get User Data by ID
 **Endpoint:** `GET /users/{id}`
@@ -123,6 +137,9 @@ This API uses Bearer token authorization where the /login endpoint provides a te
     "is_online": false
 }
 ```
+
+**Chart:**
+![image](draw/user_id.png)
 
 ### Get Logged-in User Profile
 **Endpoint:** `GET /me/profile`
@@ -149,6 +166,9 @@ This API uses Bearer token authorization where the /login endpoint provides a te
     "profile_picture": "bot1.png"
 }
 ```
+
+**Chart:**
+![image](draw/my_user.png)
 
 ### Get Logged-in User Biographical Data
 **Endpoint:** `GET /me/bio`
@@ -193,6 +213,9 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 }
 ```
 
+**Chart:**
+![image](draw/my_bio.png)
+
 ### 
 **Endpoint:** `GET /online`
 
@@ -205,6 +228,9 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 }
 ```
 
+**Chart:**
+![image](draw/online.png)
+
 ### 
 **Endpoint:** `GET /spawn/bots`
 
@@ -216,6 +242,9 @@ This API uses Bearer token authorization where the /login endpoint provides a te
     "message":"Demo bots spawned and are on the loose!"
 }
 ```
+
+**Chart:**
+![image](draw/bots.png)
 
 ### 
 **Endpoint:** `POST /username`
@@ -235,6 +264,9 @@ This API uses Bearer token authorization where the /login endpoint provides a te
     "message": "Username successfully registered"
 }
 ```
+
+**Chart:**
+![image](draw/username.png)
 
 ### Get User Biographical Data by ID
 **Endpoint:** `GET /users/{id}/bio`
@@ -278,6 +310,9 @@ This API uses Bearer token authorization where the /login endpoint provides a te
     }
 }
 ```
+
+**Chart:**
+![image](draw/id_bio.png)
 
 # Setting the App Up
 

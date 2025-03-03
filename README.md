@@ -42,25 +42,55 @@ The amount of demo users created can be modified from the backend backend/db/con
 As the demo accounts are created using the same paths as creating a regular user, <br>
 with all the matching scores calculated for each connection, adding a lot of demo users at once can take a while.
 
-## API
+# API Documentation
 
-To use the API endpoints, you must first create a regular profile.
+## Overview
+This API provides endpoints for user authentication, profile management, location tracking, matchmaking, chat services, and online status tracking. 
 
-once you have created your profile, you can now access the API endpoints by logging in.
+**Base URL: http://localhost:4000/** 
 
-To login with a default setup
+## Authentication
+This API uses Bearer token authorization where the /login and /authorization endpoints provide a temporary token upon entering the correct combination of username/email and password.
 
-http://localhost:4000/login/api?email=1@1.com&password=1
+### Login to the App
+**Endpoint:** `POST /login`
 
-This will return a string, this is you Bearer Token.
+**Description:** Logs the user into the application by providing upon validation a temporary bearer token as a responce.
 
-To access endpoints that require authentication you must include the Bearer token with any requests, <br>
-including the Bearer Token in the authorization header.
+**Request:**
+```json
+[
+    "email": "example@example.com",
+    "password": "Example1" 
+]
+```
 
-**For testing purposes it is suggested to use the free postman app more information on https://web.postman.co/home**
+**Response:**
+```json
+[
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDExMTEwMjQsImlhdCI6MTc0MTAyNDYyNCwic3ViIjoiMjc4Yjk1NjYtYzBiYi00YWI5LWI4YjEtMGE3ZTQ3N2M5YzFkIn0.xFt0Pm_NUFULTPR3vMADNWEpRBc8AZRDnaSsn8DWtaw"
+]
+```
 
+### Register on the App
+**Endpoint:** `POST /register`
 
-## API Documentation
+**Description:** Registers a user into the application. 
+
+**Request:**
+```json
+[
+    "email": "example@example.com",
+    "password": "Example1"
+]
+```
+
+**Response:**
+```json
+[
+  "message": "User successfully registered"
+]
+```
 
 ### Get All Connections
 **Endpoint:** `GET /connections`

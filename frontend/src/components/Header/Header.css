@@ -1,0 +1,142 @@
+.header {
+    background-color: #FF6969;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+    margin: 0;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.logo,
+.signup,
+.nav-link {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: min(1.5vw, 150px);
+    margin-bottom: 0px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.logo:hover,
+.signup:hover,
+.nav-link:hover {
+    color: hsla(0, 0%, 96%, 0.7);
+}
+
+.nav-container {
+    flex: 1;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.indicator-text {
+    color: whitesmoke;
+    font-weight: bold;
+    /* font-size: calc(0.8vw + 0.8vh)/2; */
+
+}
+
+.online-status {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.indicator-text {
+    font-size: 1rem;
+}
+
+.status-light {
+    display: flex;
+    margin-bottom: 0px;
+    font-size: calc(0.8vw + 0.8vh);
+    text-decoration: none;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px; /* Space between lights */
+    position: relative; /* Ensures proper alignment with text */
+    transform: scale(1); /* Prevents scaling with zoom */
+    transform-origin: center; /* Keeps the size consistent */
+}
+
+/* Default light styles for the secondary light */
+.secondary-light {
+    opacity: 0.8; /* Slightly dimmer than the main light */
+}
+
+/* Secondary light status colors */
+.secondary-online {
+    background-color: lightblue; /* Or any color for online status */
+}
+
+.secondary-offline {
+    background-color: lightgray; /* Or any color for offline status */
+}
+
+.secondary-unknown {
+    background-color: orange; /* Or any color for unknown status */
+}
+
+/* Main status light styles */
+.online {
+    background-color: green; /* Green for online */
+}
+
+.offline {
+    background-color: red; /* Red for offline */
+}
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 1vw;
+        max-height: fit-content;
+    }
+
+    .nav-left,
+    .nav-right {
+        flex-direction: column;
+        gap: 0.5vw;
+    }
+
+    .logo,
+    .signup,
+    .nav-link {
+        font-size: calc(1.2vw + 1.2vh);
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 2vw;
+        max-height: fit-content;
+    }
+
+    .logo,
+    .signup,
+    .nav-link {
+        font-size: calc(1.5vw + 1.5vh);
+    }
+
+    .nav-left,
+    .nav-right {
+        gap: 1vw;
+    }
+}

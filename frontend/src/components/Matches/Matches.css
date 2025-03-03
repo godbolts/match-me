@@ -1,0 +1,44 @@
+
+.body-sides
+{
+    flex: 1; 
+}
+
+.body-content
+{
+    display: flex;
+    width: 100%;
+    max-width: 1980px;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+
+
+  html, body {
+    height: 100%;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin: 0;
+    text-align: center; 
+  }
+
+  .body-content
+{
+    display: flex;
+    width: 100%;
+    max-width: 1980px;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.body-div 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: left;
+    margin-top: 50px;
+  
+}

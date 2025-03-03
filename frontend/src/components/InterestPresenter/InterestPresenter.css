@@ -1,0 +1,61 @@
+.selected-interest-presenter {
+  font-size: 15px;
+  font-weight: bold;
+  color: aliceblue;
+
+  background-color: #FF6969;
+}
+
+.unselected {
+  background-color: hsla(0, 0%, 55%, 0.3);
+}
+
+button {
+  margin: 5px;
+  padding: 7px;
+  border-radius: 20px;
+  height: fit-content;
+  width: fit-content;
+  border: 1px solid black;
+}
+
+.interest-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+  justify-items: left;
+  margin: 10px;
+
+}
+
+.category-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 10px;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 10px;
+  justify-content: center;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  min-width: 125px;
+  margin: 10px;
+  margin-right: 10px;
+}
+
+.heading {
+  display: flex;
+  color: #FF6969;
+  font-size: 36px;
+  font-weight: bold;
+}

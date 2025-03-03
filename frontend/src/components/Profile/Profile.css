@@ -1,0 +1,356 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    background: transparent;
+    padding-bottom: 30px;
+    width: 1000px;
+    text-align: center;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.profile-text {
+    color: #FF6969;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.location-text {
+    font-weight: bold;
+}
+
+.inputs {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 330px;
+    height: 59px;
+    background: whitesmoke;
+    border-radius: 6px;
+}
+
+.input-location {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.input-textarea {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 330px;
+    height: 220px;
+    background: whitesmoke;
+    border-radius: 6px;
+}
+
+.input-textarea textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 180px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+    /* margin: 0 30px; */
+    resize: none;
+}
+
+.input input {
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+    margin: 0 15px;
+}
+
+.input-profile-pic img {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    text-align: center;
+}
+
+.input-profile-pic img:hover {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    /* object-fit: cover; */
+    /* cursor: pointer; */
+}
+
+.location-display {
+    width: 100%;
+    max-width: 250px; /* Limit the container's maximum width */
+    margin: 0 auto; /* Center the parent container */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Ensure padding is included in width calculations */
+    justify-content: center;
+    align-items: center;
+}
+
+.suggestion {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.interest-display {
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    border-radius: 10px;
+    max-width: 600px; 
+    min-height: 200px; 
+
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+}
+.submit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.submit {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    color: whitesmoke;
+    background: #FF6969;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer; */
+
+    background-color: #FF6969;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #FF4C4C;
+}
+
+.inputGroup {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: flex-start; 
+}
+
+.inputGroupLocation {
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: flex-start; 
+}
+
+.inputField {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.inputField h6 {
+    margin: 0; 
+    font-weight: bold;
+    width: 80px; 
+    text-align: right; 
+}
+
+select {
+    width: 200px; 
+}
+
+.profile-body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+}
+
+.profile-main {
+    display: flex;
+    flex-direction: column;
+    width: 90%; 
+    max-width: 1200px;
+    gap: 20px; 
+}
+
+.profile-left,
+.profile-right {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5 px; */
+    border-radius: 10px;
+}
+
+
+
+
+@media (min-width: 600px) {
+    .profile-main {
+        flex-direction: row;
+    }
+
+    .submit {
+        font-size: 16px;
+    }
+
+    .profile-text {
+        font-size: 16px;
+    }
+
+    .input-profile-pic img {
+
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        text-align: center;
+    }
+
+    .input-textarea textarea {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100px;
+        max-width: 300px;
+        font-size: 19px;
+        margin: 0 15px;
+        resize: none;
+    }
+    
+    .input input {
+        height: 50px;
+        width: 300px;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #797979;
+        font-size: 19px;
+        margin: 0 15px;
+    }
+
+    .submit-container {
+        flex-direction: row;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .profile-main {
+        gap: 30px;
+    }
+
+    .input-profile-pic img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .submit {
+        font-size: 18px;
+    }
+
+    .profile-text {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+
+    .input-textarea textarea {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100px;
+        max-width: 400px;
+        font-size: 19px;
+        margin: 0 15px;
+        resize: none;
+    }
+    
+    .input input {
+        height: 50px;
+        width: 350px;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #797979;
+        font-size: 19px;
+        margin: 0 15px;
+    }
+
+    .submit-container {
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .profile-main {
+        gap: 40px;
+    }
+
+    .submit {
+        font-size: 22px;
+    }
+
+    .profile-text {
+        font-size: 24px;
+    }
+
+    .input-profile-pic img {
+        padding: 20px;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        text-align: center;
+    }
+    .submit-container {
+        flex-direction: row;
+    }
+}

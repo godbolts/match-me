@@ -29,6 +29,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 ```
 
 **Chart:**
+
 ![image](draw/login.png)
 
 ### Register on the App
@@ -51,6 +52,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 }
 ```
 **Chart:**
+
 ![image](draw/register.png)
 
 ### Get All Connections
@@ -72,6 +74,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 ```
 
 **Chart:**
+
 ![image](draw/connections.png)
 
 
@@ -92,6 +95,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 ```
 
 **Chart:**
+
 ![image](draw/recommendations.png)
 
 ### Get User Profile by ID
@@ -112,6 +116,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 }
 ```
 **Chart:**
+
 ![image](draw/user_profile.png)
 
 ### Get User Data by ID
@@ -139,6 +144,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 ```
 
 **Chart:**
+
 ![image](draw/user_id.png)
 
 ### Get Logged-in User Profile
@@ -168,6 +174,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 ```
 
 **Chart:**
+
 ![image](draw/my_user.png)
 
 ### Get Logged-in User Biographical Data
@@ -214,6 +221,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 ```
 
 **Chart:**
+
 ![image](draw/my_bio.png)
 
 ### 
@@ -229,6 +237,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 ```
 
 **Chart:**
+
 ![image](draw/online.png)
 
 ### 
@@ -244,6 +253,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 ```
 
 **Chart:**
+
 ![image](draw/bots.png)
 
 ### 
@@ -266,6 +276,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 ```
 
 **Chart:**
+
 ![image](draw/username.png)
 
 ### Get User Biographical Data by ID
@@ -312,6 +323,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 ```
 
 **Chart:**
+
 ![image](draw/id_bio.png)
 
 # Setting the App Up

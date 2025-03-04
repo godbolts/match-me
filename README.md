@@ -331,6 +331,13 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 
 **Description:** Endpoint uploads a picture and designates it as the profile picture. It generates a name for the picture by using the users own uuid and then stores the picture in a public folder.
 
+**Request:**
+```multipart/form-data
+{
+    profilePic: image.png
+}
+```
+
 **Response:**
 ```json
 {

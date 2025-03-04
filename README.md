@@ -326,7 +326,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 
 ![image](draw/id_bio.png)
 
-### Upload Picture
+### Upload Picture to the Public Folder
 **Endpoint:** `POST /picture`
 
 **Description:** Endpoint uploads a picture and designates it as the profile picture. It generates a name for the picture by using the users own uuid and then stores the picture in a public folder.
@@ -342,7 +342,7 @@ This API uses Bearer token authorization where the /login endpoint provides a te
 
 ![image](draw/picture.png)
 
-### Get User Biographical Data by ID
+### Remove Picture from the Public Folder
 **Endpoint:** `POST /picture/remove`
 
 **Description:** Takes the user_id from the token and deletes the picture with that id from the public folder.
